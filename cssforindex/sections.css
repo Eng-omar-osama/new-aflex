@@ -49,7 +49,7 @@ body,html {
     border: 2px solid var(--main-color-more-dark1);
     box-shadow: 0 2px 4px var(--main-color-more-dark1), 0 8px 16px var(--main-color-more-dark1);
     border-radius: 8px;
-    background-image: url(/AFLEX.github.A//media/film2.jpg);
+    background-image: url(../media/film2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     animation-name: show_film;
@@ -61,22 +61,22 @@ body,html {
 }
 @keyframes show_film {
     25% {
-        background: url(/AFLEX.github.A//media/film3.jpg);
+        background: url(../media/film3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
     50% {
-        background: url(/AFLEX.github.A//media/film4.jpg);
+        background: url(../media/film4.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
     75% {
-        background: url(/AFLEX.github.A//media/film7.jpg);
+        background: url(../media/film7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
     100% {
-        background: url(/AFLEX.github.A//media/film6.jpg);
+        background: url(../media/film6.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }

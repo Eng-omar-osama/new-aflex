@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif!important;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    color: var(--main-color);
+    color:var(--first-text-color);
+}
+/* Responsive styling for the single pricing block on smaller screens */
+@media only screen and (max-width: 480px) {
+    .mainscreen {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.mainscreen
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    color:#963E7B;
+   align-items: flex-start;
+   color: var(--main-color);
+    color:var(--first-text-color);
+}
+
+.card {
+	
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+   align-items: flex-start;
+      height: fit-content;
+    
+}
+
+
+.rightside {
+    background-color: #ffffff;
+	width: 35rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+   align-items: flex-start;
+}
+
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+}
+
+.inputbox
+{
+    color:#030303;
+	width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+  outline:none;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.button{
+    background: linear-gradient(100deg, var(--main-color-more-dark1) ,var(--main-color-more-dark2) ,var(--main-color));
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+    background-color: var(--background-color);
+    border: 2px  var(--background-color);
+    color: var(--second-text-color);
+    color:var(--main-color);
+}
+
+.button:hover
+{
+	transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+}
