@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+
+    background-color: #333;
+    width: 150px;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    border-radius: 150px;
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+
+.btn :nth-child(1),
+.btn :nth-child(2) {
+    width: 75px;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #ccc;
+}
+
+.btn :nth-child(1) {
+    color: #eee;
+    background-color: #0f0a05;
+}
+
+.btn :nth-child(2) {
+    color: #0f0a05;
+    background-color: #eee;
+}

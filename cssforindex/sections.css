@@ -1,0 +1,131 @@
+/*
+header font
+font-family: 'Monoton', cursive;
+*/
+/*
+page font
+font-family: 'Cairo', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body,html {
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+:root{
+    --main-color:#dca523;
+    --main-color-more-dark2:#a07512;
+    --main-color-more-dark1:#684d0f;
+    --second-color:#ffffff1a;
+    --background-color:#0f0a05;
+    --second-text-color:#fff;
+    --main-transition:0.3s;
+    --small-cubes-color: #1e1e21;
+}
+/* ==how===================================================================== */
+.how {
+    border-top: 10px solid var(--small-cubes-color);
+    background-color: var(--background-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.how .images {
+    margin-top: 30px;
+    width: 270px;
+    height: 400px;
+    background-color: var(--background-color);
+    border: 2px solid var(--main-color-more-dark1);
+    box-shadow: 0 2px 4px var(--main-color-more-dark1), 0 8px 16px var(--main-color-more-dark1);
+    border-radius: 8px;
+    background-image: url(/AFLEX.github.A//media/film2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: show_film;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    margin-bottom: 65px;
+}
+@keyframes show_film {
+    25% {
+        background: url(/AFLEX.github.A//media/film3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background: url(/AFLEX.github.A//media/film4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75% {
+        background: url(/AFLEX.github.A//media/film7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background: url(/AFLEX.github.A//media/film6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.text_for_images {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--second-text-color);
+}
+.aflex {
+    color: var(--main-color);
+    font-weight: 900;
+}
+.com2 {
+    color: var(--main-color-more-dark1);
+    font-size: 0.7rem;
+}
+/* =========================================================================== */
+.creat_sec {
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creat button {
+    background: linear-gradient(-100deg, var(--main-color-more-dark1) ,var(--main-color-more-dark2) ,var(--main-color));
+    color: var(--second-text-color);
+    margin-bottom: 55px;
+    display: inline-block;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+/* ==footer====================================================================== */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border-top: 10px dotted var(--small-cubes-color);
+    padding: 20px;
+    color: var(--second-text-color);
+}
+::selection {
+    background-color: var(--main-color-more-dark1);
+    color: var(--background-color);
+}
