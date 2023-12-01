@@ -1,0 +1,252 @@
+/*
+header font
+font-family: 'Monoton', cursive;
+*/
+/*
+page font
+font-family: 'Cairo', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-color:#dca523;
+    --main-color-more-dark2:#a07512;
+    --main-color-more-dark1:#684d0f;
+    --second-color:#ffffff1a;
+    --background-color:#0f0a05;
+    --second-text-color:#fff;
+    --main-transition:0.3s;
+    --small-cubes-color: #1e1e21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color);
+}
+/* start header=============================================================== */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: fixed;
+  z-index: 1000;
+  margin-top: -730px;
+}
+.logo {
+  font-family: 'Monoton', cursive;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.com {
+  color: var(--main-color-more-dark1);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.search {
+  padding-right: 20px;
+}
+header #container ul li {
+  list-style: none;
+}
+header #container ul li a {
+  text-decoration: none;
+  color: var(--main-color-more-dark1);
+}
+header #container ul li p:hover{
+  color: var(--second-text-color);
+  background-color: var(--small-cubes-color);
+}
+#container {
+  width: 150px;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+#open,#close{
+  /* margin-top: 420px;
+  margin-bottom: 10px; */
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--second-text-color);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+#close {
+  color: var(--important-red);
+}
+.hide {
+  display: none;
+}
+.field {
+  width: 250px;
+  background-color: transparent;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+.field input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: var(--main-color-more-dark1);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 800;
+  color: var(--main-color);
+}
+.field .search {
+  color: var(--main-color);
+}
+/* end header================================================================= */
+.main {
+    font-family: 'Monoton', cursive;
+    color: var(--main-color);
+    letter-spacing: 8px;
+    position: absolute;
+    top: 50px;
+    margin-top: 85px;
+}
+
+.container {
+  width: 80%;
+  padding: 20px 20px 20px 20px;
+  margin-top: 100px;
+}
+
+.container h2 {
+  width: 100%;
+  color: var(--main-color-more-dark1);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.container .row100 {
+  width: 100%;
+  display: grid;
+}
+
+.container .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.container .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: var(--main-color-more-dark2);
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: var(--small-cubes-color);
+}
+
+.container .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--main-color);
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: var(--main-color-more-dark1);
+  color: var(--small-cubes-color);
+  font-size: 18px;
+  border-radius: 2px;
+}
+input[type="submit"]:hover{
+    background-color: var(--main-color);
+}
