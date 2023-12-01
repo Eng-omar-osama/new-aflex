@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aflex-payment</title>
+   
+    <!-- meta --> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/media/A.png">
+    <!-- css files -->
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/css for theme/btn.css">
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/css for main/all.min.css">
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/css for main/team2.css">
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/css for footer/footer.css">
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/css for payment/payment.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main\css for subscribtion\subscribtion.css">
+
+     
+    </head>
+    <body>
+    <div class="parent">
+        <audio autoplay>
+            <source  src="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/WhatsApp Audio 2022-04-24 at 3.23.34 AM.mp4"/>
+        </audio>
+        <!-- ==start header -->
+	<header>
+		<a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/main.html" style="text-decoration: none;"><div class="logo">A_FLEX<span class="com">.com</span></div></a>
+		<div class="menu">
+			<button id="open"> <i class="fa-solid fa-bars"></i> </button>
+			<button id="close" class="hide"> <i class="fa-solid fa-x"></i> </button>
+			<div id="container" class="hide">
+				<ul>
+				<li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/main.html"><p>Main</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/tabel.html"><p>Time tabel</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/city_stars.html"><p>Cinema</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/Actors.html"><p>Actors</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/top 10.html"><p>Top 10</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/samaries.html"><p>Summary</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/userprofilepage.htm"><p>Profile</p></a></li>
+				<hr>
+				<li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/feed pack.html"><p>Feedback</p></a></li>
+        <hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/contact us.html"><p>Contact us</p></a></li>
+				<hr>
+                <li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/about us.html"><p>About us</p></a></li>
+				<hr>
+				<li><a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/index.html"><p>Log out <i class="fa-solid fa-right-from-bracket"></i></p></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn">
+            <button type="button" id="light">Main</button>
+            <button type="button" id="dark">Second</i></button>
+        </div>
+            <div class="search">
+                <div class="field">
+                    <form action="">
+                        <a href="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/search.html">
+                            <input type="text" placeholder="search">
+                            <label for=""> <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span> </label>
+                        </a>
+                    </form>
+                </div>
+            </div>
+	</header>
+	<!-- end header -->
+
+            <div class="parent2">
+                <h3 class="center1">AFLEX is the best<br> Web For    </h3>
+                </div>
+                <br>
+                <br>
+                <!--payment form  starts -->
+                <div class="parent3">
+                    <div class="mainscreen">
+                        <div class="card">
+                          <div class="rightside">
+                            <form action="">
+                              <h1>CheckOut</h1>
+                              <h2>Payment Information</h2>
+                              <p>Cardholder Name</p>
+                              <input type="text" class="inputbox" name="name" required placeholder="Your card holder name"/>
+                              <p>Card Number</p>
+                              <input type="number" class="inputbox" name="card_number" id="card_number" required placeholder="0000-0000-0000-0000" />
+                  
+                              <p>Card Type</p>
+                              <select class="inputbox" name="card_type" id="card_type" required>
+                                <option value="">--Select a Card Type--</option>
+                                <option value="Visa">Visa</option>
+                                <option value="RuPay">RuPay</option>
+                                <option value="MasterCard">MasterCard</option>
+                              </select>
+                  <div class="expcvv">
+                  
+                              <p class="expcvv_text">Expiry</p>
+                              <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+                  
+                              <p class="expcvv_text2">CVV</p>
+                              <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                          </div>
+                              <p></p>
+                              <button type="submit" class="button">CheckOut</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <!-- payment form end -->
+                     
+                </div>
+
+    </div>
+    
+    
+
+
+
+    <footer>
+        <div class="copy_write">
+        <a target="_blanck" href="https://www.facebook.com/profile.php?id=100080445687031">&copy;Aflex</a>
+        </div>
+        <div class="social">
+        <a target="_blanck" href="https://www.facebook.com/profile.php?id=100080445687031"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blanck" href="https://www.facebook.com/profile.php?id=100080445687031"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a target="_blanck" href="https://www.youtube.com/channel/UCQlSZ2TgzyX_CsDM45lfzlA"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blanck" href="https://www.instagram.com/section1.teamwork/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+   
+   
+    <!-- js files -->
+ <script src="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/js for header/header.js"></script>
+ <script src="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/js for theme/js.js"></script>
+<script src="E:\FCAIH\Level 3\SA-1\project\AFLEX.github.A-main/js for theme/js1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    </body>
+</html>
